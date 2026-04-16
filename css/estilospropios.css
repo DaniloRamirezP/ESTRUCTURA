@@ -2,3 +2,34 @@
         color:purple;
         font-size: 70px; 
     }
+
+    #Logo_Banda
+    {
+        width: 1200px;
+    }
+
+    .imagenes
+    {
+        border: 10px solid orangered;
+        border-radius: 50px;
+    }
+
+    #menuPpal>a
+    {
+        font-size: 70px;
+        text-decoration: none;
+        color: darkgreen;
+    }
+    #menu2>a
+    {
+        font-size: 60px;
+        color: orange;
+    }
+
+    h1 ~ p
+    {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 30px;
+        text-decoration: none;
+        color: darkred;
+    }
