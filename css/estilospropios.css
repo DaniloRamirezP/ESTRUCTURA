@@ -1,71 +1,280 @@
-   h1{
-        color:purple;
-        font-size: 70px; 
-    }
 
-    #BRUTALESH
-    {
-        background-color: chartreuse;
-        text-align: center;
-    }
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+ 
+body {
+    font-family: 'Oswald', Arial, sans-serif;
+    background-color: #111;
+    color: #ddd;
+}
+ 
+ 
+header {
+    margin: 0;
+    padding: 0;
+}
+ 
+#fondoCabeza {
+  
+    width: 100%;
+    background-color: #520120;
+    text-align: center;
+    padding: 30px 0;
+    border-bottom: 4px solid #8b0000;
+}
+ 
+#cajaLogo {
+    text-align: center;
+    margin: 0 auto;
+}
+ 
 
-    #Logo_Banda
-    {
-        width: 900px;
-        height: 350px;
-        
-    }
+#Logo {
+    max-width: 90%;
+    height: auto;
+}
 
-    .imagenes
-/*    {
-        border: 10px solid orangered;
-        border-radius: 50px;
-    }
-*/
-    #menuPpal>a
-    {
-        font-size: 70px;
-        text-decoration: none;
-        color: darkgreen;
-    }
-    #menu2>a
-    {
-        font-size: 60px;
-        color: orange;
-    }
+ 
+#menuPpal {
+    background-color: #1a0000;
+    padding: 10px 0;
+    text-align: center;
+    border-bottom: 2px solid #8b0000;
+}
+ 
+#menuPpal > a {
+    font-size: 40px;
+    text-decoration: none;
+    color: #cc0000;
+    margin: 0 20px;
+    letter-spacing: 2px;
+    transition: color 0.2s;
+}
+ 
+#menuPpal > a:hover {
+    color: #ff4444;
+}
+ 
+#menu2 {
+    background-color: #1a0a00;
+    padding: 10px 0;
+    text-align: center;
+    border-top: 2px solid #8b4000;
+}
+ 
+#menu2 > a {
+    font-size: 35px; 
+    color: orange;
+    text-decoration: none;
+    margin: 0 15px;
+    transition: color 0.2s;
+}
+ 
+#menu2 > a:hover {
+    color: #ffcc00;
+}
+ 
+ 
+h1 {
+    color: #cc0000;
+    font-size: 50px; 
+    text-align: center;
+    margin: 30px 0 15px;
+    font-family: 'Metal Mania', cursive;
+    letter-spacing: 4px;
+    text-shadow: 2px 2px 4px #000;
+}
+ 
+h3 {
+    font-size: 30px;
+    font-family: 'Metal Mania', cursive;
+    color: #ff6600;
+    margin: 20px 0 10px;
+    text-align: center;
+}
+ 
+p {
+    font-family: 'Oswald', Arial, sans-serif;
+    font-size: 18px;
+    color: #ccc;
+    line-height: 1.7;
+    max-width: 800px;
+    margin: 10px auto;
+    padding: 0 20px;
+}
+ 
+hr {
+    border: none;
+    border-top: 2px solid #8b0000;
+    margin: 30px 20px;
+}
+ 
+ol {
+    max-width: 400px;
+    margin: 20px auto;
+    padding-left: 30px;
+    font-size: 18px;
+    color: #ccc;
+}
+ 
 
-    h1 ~ p
-    {
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        font-size: 30px;
-        text-decoration: none;
-        color: darkred;
-    }
+ 
+#BRUTALESH {
+    background-color: #1a0000; 
+    text-align: center;
+    padding: 40px 20px;
+}
+ 
+#Logo_Banda {
+    max-width: 100%;
+    width: 600px;
+    height: auto;
+}
+ 
+.imagenes {
+    border: 6px solid #8b0000;
+    border-radius: 20px;
+    display: block;
+    margin: 0 auto;
+}
+ 
+ 
+#videoContainer {
+    text-align: center;
+    margin: 20px auto;
+    padding: 0 10px;
+}
+ 
+#videoContainer iframe {
+    max-width: 100%;
+}
+ 
+ 
+audio {
+    display: block;
+    margin: 20px auto;
+    width: 50%;
+    min-width: 280px;
+}
+ 
+#tablaImagenes {
+    display: table;
+    margin: 20px auto;
+    width: 500px;
+    max-width: 95%;
+    border-collapse: collapse;
+    text-align: center;
+    color: #ddd;
+}
+ 
+#tablaImagenes caption {
+    font-size: 20px;
+    font-weight: bold;
+    color: #cc0000;
+    margin-bottom: 10px;
+    font-family: 'Metal Mania', cursive;
+}
+ 
+#tablaImagenes td,
+#tablaImagenes th {
+    border: 1px solid #8b0000;
+    padding: 8px;
+}
+ 
+#tablaImagenes th {
+    background-color: #3a0000;
+    color: #ff4444;
+    font-size: 16px;
+}
+ 
+#tablaImagenes img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+ 
 
-    h3
-    {
-        font-size: 25px;
-        font-family:cursive ;
-    }
-    .parraItalica
-    {
-        font-style: italic;
-    }
-    #fondoCabeza 
-    {
-        height: 450px;
-        width: 100%;
-        border: 2px solid black;
-        background-color: #520120;
-        text-align: center;
+#formularioContacto {
+    max-width: fit-content;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: #1a0000;
+    border: 1px solid #8b0000;
+    border-radius: 12px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #cc0000;
+    margin-bottom: 10px;
+    font-family: 'Metal Mania', cursive;
+}
+ 
 
-       
-    }
-     #header
-     {
-        box-sizing: border-box;
-        margin: 0px;
-        border: 0px;
-     }
-
-    
+.campoForm {
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+ 
+.campoForm label {
+    color: #cc0000;
+    font-size: 16px;
+    font-weight: bold;
+}
+ 
+.campoForm input[type="text"],
+.campoForm input[type="number"],
+.campoForm input[type="email"],
+.campoForm input[type="password"],
+.campoForm textarea,
+.campoForm select {
+    background-color: #2a0000;
+    color: #ddd;
+    border: 1px solid #8b0000;
+    border-radius: 6px;
+    padding: 8px 10px;
+    font-size: 15px;
+    font-family: 'Oswald', sans-serif;
+    outline: none;
+}
+ 
+.campoForm input:focus,
+.campoForm textarea:focus,
+.campoForm select:focus {
+    border-color: #ff4444;
+}
+ 
+#grupoRadio {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+ 
+#grupoRadio label {
+    color: #ddd;
+    font-size: 15px;
+    font-weight: normal;
+}
+ 
+input[type="submit"] {
+    display: block;
+    margin: 20px auto 0;
+    background-color: #8b0000;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 18px;
+    font-family: 'Metal Mania', cursive;
+    border-radius: 8px;
+    cursor: pointer;
+    letter-spacing: 2px;
+    transition: background-color 0.2s;
+}
+ 
+input[type="submit"]:hover {
+    background-color: #cc0000;
+}
