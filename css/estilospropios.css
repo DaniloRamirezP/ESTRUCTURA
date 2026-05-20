@@ -1,239 +1,335 @@
-
+/* ============================
+   RESET GENERAL
+   ============================ */
 *, *::before, *::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
- 
+
+/* ============================
+   BODY
+   ============================ */
 body {
     font-family: 'Oswald', Arial, sans-serif;
     background-color: #111;
     color: #ddd;
 }
- 
- 
-header {
-    margin: 0;
-    padding: 0;
-}
- 
+
+/* ============================
+   HEADER
+   ============================ */
 #fondoCabeza {
-  
     width: 100%;
     background-color: #25201c;
     text-align: center;
     padding: 30px 0;
     border-bottom: 4px solid #8b0000;
 }
- 
-#cajaLogo {
-    text-align: center;
-    margin: 0 auto;
-}
- 
 
 #Logo {
     max-width: 90%;
     height: auto;
 }
 
- 
-#menuPpal {
-    background-color: #1a0000;
-    padding: 10px 0;
-    text-align: center;
-    border-bottom: 2px solid #8b0000;
-}
- 
-#menuPpal > a {
-    font-size: 40px;
-    text-decoration: none;
-    color: #cc0000;
-    margin: 0 20px;
-    letter-spacing: 2px;
-    transition: color 0.2s;
-}
- 
-#menuPpal > a:hover {
-    color: #ff4444;
-}
- 
-#menu2 {
-    background-color: #1a0a00;
-    padding: 10px 0;
-    text-align: center;
-    border-top: 2px solid #8b4000;
-}
- 
-#menu2 > a {
-    font-size: 35px; 
-    color: orange;
-    text-decoration: none;
-    margin: 0 15px;
-    transition: color 0.2s;
-}
- 
-#menu2 > a:hover {
-    color: #ffcc00;
-}
- 
-#seccion2 
-    .contenidoPrincipal {
-
-    
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    }
-
-
-h1 {
-    color: #cc0000;
-    font-size: 50px; 
-    text-align: center;
-    margin: 30px 0 15px;
-    font-family: 'Metal Mania', cursive;
-    letter-spacing: 4px;
-    text-shadow: 2px 2px 4px #000;
-}
- 
-h3 {
-    font-size: 30px;
-    font-family: 'Metal Mania', cursive;
-    color: #ff6600;
-    margin: 20px 0 10px;
-    text-align: center;
-}
- 
-p {
-    font-family: 'Oswald', Arial, sans-serif;
-    font-size: 18px;
-    color: #ccc;
-    line-height: 1.7;
-    max-width: 800px;
-    margin: 10px auto;
-    padding: 0 20px;
-}
- 
-hr {
-    border: none;
-    border-top: 2px solid #8b0000;
-    margin: 30px 20px;
-}
- 
-ol {
-    max-width: 400px;
-    margin: 20px auto;
-    padding-left: 30px;
-    font-size: 18px;
-    color: #ccc;
-}
- 
-
- 
-#BRUTALESH {
-    background-color: #1a0000; 
-    text-align: center;
-    padding: 40px 20px;
-}
- 
-#Logo_Banda {
-    max-width: 100%;
-    width: 600px;
-    height: auto;
-}
- 
 .imagenes {
     border: 6px solid #8b0000;
     border-radius: 20px;
     display: block;
     margin: 0 auto;
 }
- 
- 
-#videoContainer {
+
+/* ============================
+   NAV PRINCIPAL
+   ============================ */
+#menuPpal {
+    background-color: #1a0000;
+    padding: 12px 0;
     text-align: center;
-    margin: 20px auto;
-    padding: 0 10px;
+    border-bottom: 2px solid #8b0000;
 }
- 
-#videoContainer iframe {
-    max-width: 100%;
-}
- 
- 
-audio {
-    display: block;
-    margin: 20px auto;
-    width: 50%;
-    min-width: 280px;
-}
- 
-#tablaImagenes {
-    display: table;
-    margin: 20px auto;
-    width: 500px;
-    max-width: 95%;
-    border-collapse: collapse;
-    text-align: center;
-    color: #ddd;
-}
- 
-#tablaImagenes caption {
-    font-size: 20px;
-    font-weight: bold;
+
+#menuPpal a {
+    font-size: 28px;
+    text-decoration: none;
     color: #cc0000;
-    margin-bottom: 10px;
+    margin: 0 20px;
+    letter-spacing: 2px;
     font-family: 'Metal Mania', cursive;
+    transition: color 0.2s;
 }
- 
-#tablaImagenes td,
-#tablaImagenes th {
-    border: 1px solid #8b0000;
-    padding: 8px;
-}
- 
-#tablaImagenes th {
-    background-color: #3a0000;
+
+#menuPpal a:hover {
     color: #ff4444;
-    font-size: 16px;
 }
- 
-#tablaImagenes img {
-    max-width: 100%;
+
+/* ============================
+   TÍTULOS GENERALES
+   ============================ */
+h1 {
+    color: #cc0000;
+    font-size: 60px;
+    text-align: center;
+    margin: 30px 0 15px;
+    font-family: 'Metal Mania', cursive;
+    letter-spacing: 4px;
+    text-shadow: 2px 2px 4px #000;
+}
+
+h2 {
+    color: #cc0000;
+    font-size: 38px;
+    text-align: center;
+    margin: 20px 0 15px;
+    font-family: 'Metal Mania', cursive;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 4px #000;
+}
+
+h3 {
+    font-size: 24px;
+    font-family: 'Metal Mania', cursive;
+    color: #ff6600;
+    margin: 10px 0 8px;
+    text-align: center;
+}
+
+p {
+    font-family: 'Oswald', Arial, sans-serif;
+    font-size: 17px;
+    color: #ccc;
+    line-height: 1.7;
+}
+
+hr {
+    border: none;
+    border-top: 2px solid #8b0000;
+    margin: 30px 20px;
+}
+
+/* ============================
+   ESTILOS COMUNES DE SECCIÓN
+   ============================ */
+section {
+    padding: 40px 30px;
+    border-bottom: 2px solid #2a0000;
+}
+
+/* ============================
+   SECCIÓN 1
+   Diseño de dos columnas:
+   izquierda = texto | derecha = foto
+   ============================ */
+.seccion1-contenido {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.seccion1-texto {
+    flex: 1;
+}
+
+.seccion1-texto h2 {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.seccion1-texto p {
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+.seccion1-foto {
+    flex: 1;
+    text-align: center;
+}
+
+.foto-banda {
+    width: 100%;
+    max-width: 400px;
     height: auto;
-    border-radius: 8px;
+    border: 4px solid #8b0000;
+    border-radius: 12px;
+    display: block;
+    margin: 0 auto;
 }
- 
+
+.pie-foto {
+    color: #888;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 8px;
+}
+
+/* ============================
+   SECCIÓN 2
+   Tres bloques en fila: Imágenes | Logos | Fotos
+   ============================ */
+#seccion2 {
+    background-color: #0d0000;
+}
+
+.seccion2-grid {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.bloque-galeria {
+    flex: 1;
+    background-color: #1a0000;
+    border: 1px solid #8b0000;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+}
+
+.bloque-galeria img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid #8b0000;
+    margin-top: 10px;
+}
+
+/* ============================
+   SECCIÓN 3
+   Izquierda: Live Session (grande)
+   Derecha: In Concert + EP Youtube (apilados)
+   ============================ */
+#seccion3 {
+    background-color: #0a0000;
+}
+
+.seccion3-contenido {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    max-width: 1100px;
+    margin: 0 auto;
+    align-items: flex-start;
+}
+
+.video-principal {
+    flex: 2;
+}
+
+.videos-secundarios {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.video-secundario {
+    background-color: #1a0000;
+    border: 1px solid #8b0000;
+    border-radius: 10px;
+    padding: 12px;
+}
+
+/* Videos responsivos (técnica padding-bottom 16:9) */
+.contenedor-video {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    border-radius: 8px;
+    margin-top: 8px;
+}
+
+.contenedor-video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* ============================
+   SECCIÓN 4
+   Dos columnas: Tienda | Formulario
+   ============================ */
+#seccion4 {
+    background-color: #0d0000;
+}
+
+.seccion4-contenido {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    max-width: 1100px;
+    margin: 0 auto;
+    align-items: flex-start;
+}
+
+/* --- Bloque Tienda --- */
+.bloque-tienda {
+    flex: 1;
+    background-color: #1a0000;
+    border: 1px solid #8b4000;
+    border-radius: 12px;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.bloque-tienda p {
+    margin: 15px 0 25px;
+    text-align: center;
+}
+
+.boton-tienda {
+    display: inline-block;
+    background-color: #8b4000;
+    color: white;
+    text-decoration: none;
+    padding: 12px 28px;
+    font-size: 18px;
+    font-family: 'Metal Mania', cursive;
+    border-radius: 8px;
+    letter-spacing: 2px;
+    transition: background-color 0.2s;
+}
+
+.boton-tienda:hover {
+    background-color: #cc6600;
+}
+
+/* --- Bloque Formulario --- */
+.bloque-formulario {
+    flex: 1;
+}
 
 #formularioContacto {
-    max-width: fit-content;
-    margin: 30px auto;
-    padding: 30px;
     background-color: #1a0000;
     border: 1px solid #8b0000;
     border-radius: 12px;
-    font-size: 30px;
-    font-weight: bold;
-    color: #cc0000;
-    margin-bottom: 10px;
-    font-family: 'Metal Mania', cursive;
+    padding: 25px;
 }
- 
 
 .campoForm {
-    margin-bottom: 16px;
+    margin-bottom: 14px;
     display: flex;
     flex-direction: column;
-    gap: 6px;
+    gap: 5px;
 }
- 
+
 .campoForm label {
     color: #cc0000;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: bold;
+    font-family: 'Metal Mania', cursive;
 }
- 
+
 .campoForm input[type="text"],
 .campoForm input[type="number"],
 .campoForm input[type="email"],
@@ -249,29 +345,30 @@ audio {
     font-family: 'Oswald', sans-serif;
     outline: none;
 }
- 
+
 .campoForm input:focus,
 .campoForm textarea:focus,
 .campoForm select:focus {
     border-color: #ff4444;
 }
- 
+
 #grupoRadio {
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 10px;
     flex-wrap: wrap;
 }
- 
+
 #grupoRadio label {
     color: #ddd;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: normal;
+    font-family: 'Oswald', sans-serif;
 }
- 
+
 input[type="submit"] {
     display: block;
-    margin: 20px auto 0;
+    margin: 16px auto 0;
     background-color: #8b0000;
     color: white;
     border: none;
@@ -283,7 +380,83 @@ input[type="submit"] {
     letter-spacing: 2px;
     transition: background-color 0.2s;
 }
- 
+
 input[type="submit"]:hover {
     background-color: #cc0000;
+}
+
+/* ============================
+   FOOTER - Redes sociales
+   ============================ */
+footer {
+    background-color: #1a0000;
+    border-top: 3px solid #8b0000;
+    text-align: center;
+    padding: 30px 20px 20px;
+    margin-top: 0;
+}
+
+#redesSociales h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #ff6600;
+}
+
+.redes-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.redes-links a {
+    color: #cc0000;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Metal Mania', cursive;
+    letter-spacing: 1px;
+    transition: color 0.2s;
+}
+
+.redes-links a:hover {
+    color: #ff4444;
+}
+
+.copyright {
+    font-size: 13px;
+    color: #666;
+    margin-top: 10px;
+}
+
+/* ============================
+   RESPONSIVE - Celular
+   Cuando la pantalla es pequeña,
+   las columnas pasan a ser filas
+   ============================ */
+@media (max-width: 768px) {
+
+    #menuPpal a {
+        font-size: 18px;
+        margin: 0 8px;
+    }
+
+    .seccion1-contenido {
+        flex-direction: column;
+    }
+
+    .seccion2-grid {
+        flex-direction: column;
+    }
+
+    .seccion3-contenido {
+        flex-direction: column;
+    }
+
+    .seccion4-contenido {
+        flex-direction: column;
+    }
+
+    h1 { font-size: 40px; }
+    h2 { font-size: 28px; }
 }
