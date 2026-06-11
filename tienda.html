@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda - Brutalesh</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Metal+Mania&family=Oswald:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/estilospropios.css">
+</head>
+
+<body>
+
+    <!-- HEADER: mismo logo que index.html, visible al entrar a la tienda -->
+    <header>
+        <div id="fondoCabeza">
+            <img src="imagenes/Logo_Original.png" id="Logo">
+        </div>
+    </header>
+
+    <nav id="menuPpal">
+        <a href="index.html#seccion1">Inicio</a>
+        <a href="index.html#seccion2">Galería</a>
+        <a href="index.html#seccion3">Videos</a>
+        <a href="tienda.html" class="nav-activo">Tienda</a>
+        <a href="index.html#formularioContacto">Únete</a>
+        <a href="index.html#redesSociales">Redes</a>
+    </nav>
+
+    <main>
+
+        <section id="bannerTienda">
+            <span class="tienda-badge">
+                <img src="imagenes/Advisory.jpg" alt="Advisory Brutalesh" class="badge-img">
+            </span>
+            <h1>Tienda Oficial</h1>
+            <div class="tienda-divider"></div>
+            <p class="tienda-descripcion">
+                Viste la brutalidad. Merch oficial de Brutalesh
+                directamente desde el Oriente Antioqueño.
+            </p>
+            <div class="tienda-stats">
+                <div class="stat-item">
+                    <span class="stat-num">9</span>
+                    <span class="stat-label">Productos</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-num">3</span>
+                    <span class="stat-label">Categorías</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-num">Col</span>
+                    <span class="stat-label">Envíos</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="seccionFiltros">
+            <div class="filtros-contenedor">
+                <button class="filtro-btn" onclick="filtrar('todos', this)">Todos</button>
+                <button class="filtro-btn" onclick="filtrar('cd', this)">CDs</button>
+                <button class="filtro-btn" onclick="filtrar('camiseta', this)">Camisetas</button>
+                <button class="filtro-btn" onclick="filtrar('gorra', this)">Gorras</button>
+            </div>
+        </section>
+
+        <section id="seccionProductos">
+            <div class="productos-grid">
+
+                <!-- CDs -->
+                <div class="tarjeta-producto" data-categoria="cd">
+                    <div class="producto-imagen" onclick="abrirModal('imagenes/DemoArtesanalFront.jpg', 'CD-Demo Artesanal')">
+                        <img src="imagenes/DemoArtesanalFront.jpg" alt="CD-Demo Artesanal">
+                        <span class="producto-tag">CD-Demo Artesanal</span>
+                        <div class="zoom-hint">🔍 Ver detalle</div>
+                    </div>
+                    <div class="producto-info">
+                        <h3 class="producto-nombre">Legions of Desolation</h3>
+                        <p class="producto-descripcion">DEMO - EP debut de BRUTALESH. Un Intro espectacular que da paso a 2 temas de death metal brutal grabados con recursos propios y de manera Artesanal.</p>
+                        <div class="producto-footer">
+                            <span class="producto-precio">$15.000</span>
+                            <button class="btn-agregar" onclick="agregarAlCarrito('CD-Demo Artesanal Legions of Desolation', 15000)">+ Agregar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tarjeta-producto" data-categoria="cd">
+                    <div class="producto-imagen" onclick="abrirModal('imagenes/CDMutilated.jpg', 'CD-Demo Mutilated')">
+                        <img src="imagenes/CDMutilated.jpg" alt="CD-Demo Mutilated">
+                        <span class="producto-tag">CD-Demo Mutilated</span>
+                        <div class="zoom-hint">🔍 Ver detalle</div>
+                    </div>
+                    <div class="producto-info">
+                        <h3 class="producto-nombre">Re-Lanzamiento Demo</h3>
+                        <p class="producto-descripcion">Re-lanzamiento de alta calidad del Demo - Legions of Desolation, bajo el sello Norte-Americano Mutilated Records.</p>
+                        <div class="producto-footer">
+                            <span class="producto-precio">$35.000</span>
+                            <button class="btn-agregar" onclick="agregarAlCarrito('DEMO MUTILATED', 35000)">+ Agregar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tarjeta-producto" data-categoria="cd">
+                    <div class="producto-imagen" onclick="abrirModal('imagenes/comingsoon.webp', 'Próximamente')">
+                        <img src="imagenes/comingsoon.webp" alt="CD Demo 2024">
+                        <span class="producto-tag nuevo">NUEVO</span>
+                        <div class="zoom-hint">🔍 Ver detalle</div>
+                    </div>
+                    <div class="producto-info">
+                        <h3 class="producto-nombre">Proximamente FULL LENGTH - 3RD EYE ERRADICATION</h3>
+                        <p class="producto-descripcion">Este en nuestro 1er FULL LENGTH, posiblemente salga a principios del 2027.</p>
+                        <div class="producto-footer">
+                            <span class="producto-precio">$45.000</span>
+                            <button class="btn-agregar" onclick="agregarAlCarrito('3RD EYE ERRADICATION', 45000)">+ Agregar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CAMISETAS -->
+                <div class="tarjeta-producto" data-categoria="camiseta">
+                    <div class="producto-imagen" onclick="abrirModal('imagenes/CamisetaLogoAm.jpg', 'Camiseta Logo Amarillo')">
+                        <img src="imagenes/CamisetaLogoAm.jpg" alt="Camiseta Logo Amarillo">
+                        <span class="producto-tag">CAMISETA LOGO AMARILLO</span>
+                        <div class="zoom-hint">🔍 Ver detalle</div>
+                    </div>
+                    <div class="producto-info">
+                        <h3 class="producto-nombre">Camiseta Logo Amarillo</h3>
+                        <p class="producto-descripcion">100% algodón negro y fabricacion 100% Nacional. Logo oficial Brutalesh en Amarillo. Tallas S, M, L, XL. Estampacion de alta calidad.</p>
+                        <div class="producto-footer">
+                            <span class="producto-precio">$55.000</span>
+                            <button class="btn-agregar" onclick="agregarAlCarrito('Camiseta Logo Amarillo', 55000)">+ Agregar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tarjeta-producto" data-categoria="camiseta">
+                    <div class="producto-imagen" onclick="abrirModal('imagenes/CamisetaLogoBl.jpg', 'Camiseta Logo Blanco')">
+                        <img src="imagenes/CamisetaLogoBl.jpg" alt="Camiseta Logo Blanco">
+                        <span class="producto-tag nuevo">CAMISETA LOGO BLANCO</span>
+                        <div class="zoom-hint">🔍 Ver detalle</div>
+                    </div>
+                    <div class="producto-info">
+                        <h3 class="producto-nombre">Camiseta Logo Blanco</h3>
+                        <p class="producto-descripcion">100% algodón negro y fabricacion 100% Nacional. Logo oficial Brutalesh en Blanco. Tallas S, M, L, XL. Estampacion de alta calidad.</p>
+                        <div class="producto-footer">
+                            <span class="producto-precio">$55.000</span>
+                            <button class="btn-agregar" onclick="agregarAlCarrito('Camiseta Logo Blanco', 55000)">+ Agregar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tarjeta-producto" data-categoria="camiseta">
+                    <div class="producto-imagen" onclick="abrirModal('imagenes/CamisetaLogoMo.jpg', 'Camiseta Logo Morado')">
+                        <img src="imagenes/CamisetaLogoMo.jpg" alt="Camiseta Logo Morado">
+                        <span class="producto-tag">CAMISETA LOGO MORADO</span>
+                        <div class="zoom-hint">🔍 Ver detalle</div>
+                    </div>
+                    <div class="producto-info">
+                        <h3 class="producto-nombre">Camiseta Logo Morado</h3>
+                        <p class="producto-descripcion">100% algodón negro y fabricacion 100% Nacional. Logo oficial Brutalesh en Morado. Tallas S, M, L, XL. Estampacion de alta calidad.</p>
+                        <div class="producto-footer">
+                            <span class="producto-precio">$55.000</span>
+                            <button class="btn-agregar" onclick="agregarAlCarrito('Camiseta Logo Morado', 55000)">+ Agregar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- GORRAS: botones limpios con data-img, sin eventos inline -->
+                <div class="tarjeta-producto" data-categoria="gorra">
+                    <div class="producto-imagen">
+                        <img id="gorraCurvaImg" src="imagenes/GorraCurva.png" alt="Gorra Curva Brutalesh">
+                        <div class="zoom-hint" onclick="abrirModal(document.getElementById('gorraCurvaImg').src, 'Gorra Curva Brutalesh')">🔍 Ver detalle</div>
+                    </div>
+                    <div class="producto-info">
+                        <h3 class="producto-nombre">Gorra Curva Brutalesh</h3>
+                        <p class="producto-descripcion">Gorra curva ajustable con logo oficial Brutalesh.</p>
+                        <div class="titulo-colores">Colores disponibles</div>
+                        <div class="selector-colores" id="selectorGorraCurva">
+                            <button data-img="imagenes/GorraCurvaAm.webp">Logo Amarillo</button>
+                            <button data-img="imagenes/GorraCurvaBl.webp">Logo Blanco</button>
+                            <button data-img="imagenes/GorraCurvaMo.webp">Logo Morado</button>
+                        </div>
+                        <div class="producto-footer">
+                            <span class="producto-precio">$30.000</span>
+                            <button class="btn-agregar" onclick="agregarAlCarrito('Gorra Curva Brutalesh', 30000)">+ Agregar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tarjeta-producto" data-categoria="gorra">
+                    <div class="producto-imagen">
+                        <img id="gorraPlanaImg" src="imagenes/GorraPlana.png" alt="Gorra Plana Brutalesh">
+                        <div class="zoom-hint" onclick="abrirModal(document.getElementById('gorraPlanaImg').src, 'Gorra Plana Brutalesh')">🔍 Ver detalle</div>
+                    </div>
+                    <div class="producto-info">
+                        <h3 class="producto-nombre">Gorra Plana Brutalesh</h3>
+                        <p class="producto-descripcion">Gorra snapback plana con bordado oficial Brutalesh.</p>
+                        <div class="titulo-colores">Colores disponibles</div>
+                        <div class="selector-colores" id="selectorGorraPlana">
+                            <button data-img="imagenes/GorraPlanaAm.webp">Logo Amarillo</button>
+                            <button data-img="imagenes/GorraPlanaBl.webp">Logo Blanco</button>
+                            <button data-img="imagenes/GorraPlanaMo.webp">Logo Morado</button>
+                        </div>
+                        <div class="producto-footer">
+                            <span class="producto-precio">$30.000</span>
+                            <button class="btn-agregar" onclick="agregarAlCarrito('Gorra Plana Brutalesh', 30000)">+ Agregar</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="seccionCarrito">
+            <h2>Tu Pedido</h2>
+            <div class="carrito-contenedor">
+                <div id="carritoVacio" class="carrito-vacio">
+                    <p>No has agregado productos aún.</p>
+                </div>
+                <div id="carritoItems" class="carrito-items"></div>
+                <div id="carritoFooter" class="carrito-footer" style="display:none;">
+                    <div class="carrito-total">
+                        <span>Total:</span>
+                        <span id="totalPrecio" class="total-precio">$0</span>
+                    </div>
+                    <button class="btn-comprar">Finalizar Compra</button>
+                    <button class="btn-vaciar" onclick="vaciarCarrito()">Vaciar carrito</button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <div id="modalProducto" class="modal-overlay" onclick="cerrarModal()">
+        <div class="modal-contenido" onclick="event.stopPropagation()">
+            <button class="modal-cerrar" onclick="cerrarModal()">✕</button>
+            <img id="modalImg" src="" alt="">
+            <p id="modalNombre" class="modal-nombre"></p>
+        </div>
+    </div>
+
+    <footer>
+        <div id="redesSociales">
+            <h3>Redes</h3>
+            <div class="redes-links">
+                <a href="https://www.facebook.com/brutalesh.col?locale=es_LA" target="_blank" rel="noopener">Facebook</a>
+                <a href="https://www.instagram.com/brutaleshcol/" target="_blank" rel="noopener">Instagram</a>
+                <a href="https://www.youtube.com/@BRUTALESH" target="_blank" rel="noopener">YouTube</a>
+                <a href="https://open.spotify.com/search/brutalesh" target="_blank" rel="noopener">Spotify</a>
+            </div>
+        </div>
+        <p class="copyright">Todos los derechos reservados. Creador: Danilo Ramírez Peláez 2026.</p>
+    </footer>
+
+    <script>
+
+        /* ===== SELECTORES DE COLOR — GORRAS =====
+           Usa mouseenter/mouseleave (no burbujean) en lugar de
+           mouseover/mouseout (que sí burbujean y causaban el titilado) */
+
+        var imagenBase = {
+            'gorraCurvaImg': 'imagenes/GorraCurva.png',
+            'gorraPlanaImg': 'imagenes/GorraPlana.png'
+        };
+
+        var imagenSeleccionada = {};
+
+        function iniciarSelectorGorra(selectorId, imgId) {
+            var contenedor = document.getElementById(selectorId);
+            if (!contenedor) return;
+
+            contenedor.querySelectorAll('button').forEach(function(btn) {
+                var src = btn.getAttribute('data-img');
+
+
+                btn.addEventListener('click', function() {
+                    if (btn.classList.contains('color-activo')) {
+                        btn.classList.remove('color-activo');
+                        delete imagenSeleccionada[imgId];
+                        document.getElementById(imgId).src = imagenBase[imgId];
+                    } else {
+                        contenedor.querySelectorAll('button').forEach(function(b) {
+                            b.classList.remove('color-activo');
+                        });
+                        btn.classList.add('color-activo');
+                        imagenSeleccionada[imgId] = src;
+                        document.getElementById(imgId).src = src;
+                    }
+                });
+            });
+        }
+
+        /* ===== MODAL ===== */
+
+        function abrirModal(src, nombre) {
+            document.getElementById('modalImg').src = src;
+            document.getElementById('modalNombre').textContent = nombre;
+            document.getElementById('modalProducto').classList.add('modal-visible');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function cerrarModal() {
+            document.getElementById('modalProducto').classList.remove('modal-visible');
+            document.body.style.overflow = '';
+        }
+
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') cerrarModal();
+        });
+
+        /* ===== FILTROS ===== */
+
+        function filtrar(categoria, botonClickeado) {
+            if (botonClickeado.classList.contains('activo')) {
+                botonClickeado.classList.remove('activo');
+                document.querySelectorAll('.tarjeta-producto').forEach(function(t) {
+                    t.style.opacity = '0';
+                    t.style.transform = 'translateY(10px)';
+                    setTimeout(function() { t.style.display = 'none'; }, 250);
+                });
+                return;
+            }
+
+            document.querySelectorAll('.filtro-btn').forEach(function(btn) {
+                btn.classList.remove('activo');
+            });
+            botonClickeado.classList.add('activo');
+
+            document.querySelectorAll('.tarjeta-producto').forEach(function(tarjeta) {
+                if (categoria === 'todos' || tarjeta.dataset.categoria === categoria) {
+                    tarjeta.style.display = 'flex';
+                    setTimeout(function() {
+                        tarjeta.style.opacity = '1';
+                        tarjeta.style.transform = 'translateY(0)';
+                    }, 10);
+                } else {
+                    tarjeta.style.opacity = '0';
+                    tarjeta.style.transform = 'translateY(10px)';
+                    setTimeout(function() { tarjeta.style.display = 'none'; }, 250);
+                }
+            });
+        }
+
+        /* ===== CARRITO ===== */
+
+        var carrito = [];
+
+        function agregarAlCarrito(nombre, precio) {
+            var existente = carrito.find(function(item) { return item.nombre === nombre; });
+            if (existente) {
+                existente.cantidad += 1;
+            } else {
+                carrito.push({ nombre: nombre, precio: precio, cantidad: 1 });
+            }
+            renderizarCarrito();
+            document.getElementById('seccionCarrito').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function cambiarCantidad(nombre, delta) {
+            var item = carrito.find(function(i) { return i.nombre === nombre; });
+            if (!item) return;
+            item.cantidad += delta;
+            if (item.cantidad <= 0) {
+                carrito = carrito.filter(function(i) { return i.nombre !== nombre; });
+            }
+            renderizarCarrito();
+        }
+
+        function vaciarCarrito() {
+            carrito = [];
+            renderizarCarrito();
+        }
+
+        function renderizarCarrito() {
+            var contenedor = document.getElementById('carritoItems');
+            var vacio = document.getElementById('carritoVacio');
+            var footer = document.getElementById('carritoFooter');
+            var total = 0;
+
+            contenedor.innerHTML = '';
+
+            if (carrito.length === 0) {
+                vacio.style.display = 'block';
+                footer.style.display = 'none';
+                return;
+            }
+
+            vacio.style.display = 'none';
+            footer.style.display = 'block';
+
+            carrito.forEach(function(item) {
+                total += item.precio * item.cantidad;
+                var fila = document.createElement('div');
+                fila.className = 'carrito-fila';
+                fila.innerHTML =
+                    '<span class="carrito-nombre">' + item.nombre + '</span>' +
+                    '<div class="carrito-cantidad">' +
+                        '<button onclick="cambiarCantidad(\'' + item.nombre + '\', -1)">−</button>' +
+                        '<span>' + item.cantidad + '</span>' +
+                        '<button onclick="cambiarCantidad(\'' + item.nombre + '\', 1)">+</button>' +
+                    '</div>' +
+                    '<span class="carrito-subtotal">$' + (item.precio * item.cantidad).toLocaleString('es-CO') + '</span>';
+                contenedor.appendChild(fila);
+            });
+
+            document.getElementById('totalPrecio').textContent = '$' + total.toLocaleString('es-CO');
+        }
+
+        /* ===== INICIO =====
+           IMPORTANTE: los selectores se inicializan ANTES de ocultar
+           las tarjetas, porque addEventListener necesita que los
+           elementos sean accesibles. Luego se ocultan con display:none. */
+
+        /* Paso 1: iniciar selectores mientras las tarjetas son visibles */
+        iniciarSelectorGorra('selectorGorraCurva', 'gorraCurvaImg');
+        iniciarSelectorGorra('selectorGorraPlana', 'gorraPlanaImg');
+
+        /* Paso 2: ocultar productos — se hace con DOMContentLoaded para
+           garantizar que el DOM está listo, pero los eventos ya están
+           registrados en el paso anterior */
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelectorAll('.tarjeta-producto').forEach(function(t) {
+                t.style.display = 'none';
+                t.style.opacity = '0';
+            });
+        });
+
+    </script>
+
+</body>
+</html>

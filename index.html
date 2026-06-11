@@ -13,33 +13,31 @@
 
 <body>
 
-    <!-- HEADER: Logo grande de la banda -->
-    <header>
+    <!-- HEADER -->
+    <header id="inicio">
         <div id="fondoCabeza">
-            <img src="imagenes/Logo_Original.png" id="Logo" class="imagenes">
+            <img src="imagenes/Logo_Original.png" id="Logo">
         </div>
     </header>
 
-    <!-- NAV: Inicio | Imágenes | Videos | Tienda | Únete -->
+    <!-- NAV: idéntico al de tienda.html para consistencia -->
+    <!-- Inicio va al top, cada enlace apunta a su sección con ancla -->
     <nav id="menuPpal">
-        <a href="#">Inicio</a>
-        <a href="#seccion2">Galeria</a>
+        <a href="#inicio">Inicio</a>
+        <a href="#seccion2">Galería</a>
         <a href="#seccion3">Videos</a>
-        <a href="#seccion4">Tienda</a>
+        <a href="tienda.html">Tienda</a>
         <a href="#formularioContacto">Únete</a>
         <a href="#redesSociales">Redes</a>
     </nav>
 
     <main>
 
-        <!-- SECCIÓN 1: Texto izquierda + Foto banda derecha -->
+        <!-- SECCIÓN 1 -->
         <section id="seccion1">
             <div class="contenedor-centrado">
-
                 <h2>Inicios de la Brutalidad</h2>
-
                 <div class="seccion1-contenido">
-
                     <div class="seccion1-texto">
                         <p>
                             EN EL ORIENTE ANTIQUEÑO SE GESTÓ ESTA PROPUESTA DE BRUTALIDAD EXTREMA, LA
@@ -62,7 +60,6 @@
                             LOS ESTADOS UNIDOS.
                         </p>
                     </div>
-
                     <div class="seccion1-foto">
                         <img src="imagenes/BRUTALESH Band.jpg" alt="Foto de la banda Brutalesh" class="foto-banda">
                         <p class="pie-foto">Foto Banda.</p>
@@ -71,22 +68,19 @@
             </div>
         </section>
 
-        <!-- SECCIÓN 2: Tres bloques en fila — Imágenes | Logos | Fotos -->
+        <!-- SECCIÓN 2: Galería -->
         <section id="seccion2">
             <div class="contenedor-centrado">
                 <h2>Galería</h2>
                 <div class="seccion2-grid">
-
                     <div class="bloque-galeria">
                         <h3>Imágenes</h3>
                         <img src="imagenes/Logo_Original.png" alt="Imágenes de Brutalesh">
                     </div>
-
                     <div class="bloque-galeria">
                         <h3>Logos</h3>
                         <img src="imagenes/Advisory.jpg" alt="Logos de Brutalesh">
                     </div>
-
                     <div class="bloque-galeria">
                         <h3>Fotos</h3>
                         <img src="imagenes/BRUTALESH Band.jpg" alt="Fotos de Brutalesh">
@@ -95,67 +89,58 @@
             </div>
         </section>
 
-        <!-- SECCIÓN 3: Live Session (izquierda grande) + In Concert y EP Youtube (derecha apilados) -->
+        <!-- SECCIÓN 3: Videos -->
         <section id="seccion3">
             <div class="contenedor-centrado">
                 <h2>Videos</h2>
                 <div class="seccion3-contenido">
-
                     <div class="video-principal">
                         <h3>Live Session 2025</h3>
                         <div class="contenedor-video">
                             <iframe src="https://www.youtube.com/embed/8jFpBwW7L4U?si=sh55wE70I3SLNjwH"
-                                title="Brutalesh Live Session"
-                                frameborder="0"
+                                title="Brutalesh Live Session" frameborder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                referrerpolicy="strict-origin-when-cross-origin"
-                                allowfullscreen></iframe>
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         </div>
                     </div>
-
                     <div class="videos-secundarios">
-
                         <div class="video-secundario">
                             <h3>In Concert</h3>
                             <div class="contenedor-video">
                                 <iframe src="https://www.youtube.com/embed/GcFs2K2PveE"
-                                    title="Brutalesh In Concert"
-                                    frameborder="0"
+                                    title="Brutalesh In Concert" frameborder="0"
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                    referrerpolicy="strict-origin-when-cross-origin"
-                                    allowfullscreen></iframe>
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                             </div>
                         </div>
-
                         <div class="video-secundario">
                             <h3>EP Youtube</h3>
                             <div class="contenedor-video">
                                 <iframe src="https://www.youtube.com/embed/mL4vhDXJoMs?si=ErCh_-tSVRbG0GSa"
-                                    title="Brutalesh EP YouTube"
-                                    frameborder="0"
+                                    title="Brutalesh EP YouTube" frameborder="0"
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                    referrerpolicy="strict-origin-when-cross-origin"
-                                    allowfullscreen></iframe>
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- SECCIÓN 4: Tienda (izquierda) + Formulario (derecha) -->
+        <!-- SECCIÓN 4: Tienda + Formulario -->
         <section id="seccion4">
             <div class="contenedor-centrado">
                 <div class="seccion4-contenido">
 
+                    <!-- Bloque tienda: ahora enlaza correctamente a tienda.html -->
                     <div class="bloque-tienda">
                         <h2>Tienda</h2>
-                        <p>Próximamente: camisetas, vinilos y más merch de Brutalesh.</p>
-                        <a href="#" class="boton-tienda">Ver productos</a>
+                        <p>Camisetas, CDs, gorras y más merch oficial de Brutalesh.</p>
+                        <a href="tienda.html" class="boton-tienda">Ver productos</a>
                     </div>
 
                     <div class="bloque-formulario">
+                        <!-- id="formularioContacto" es el ancla del enlace "Únete" del nav -->
                         <form action="#" method="post" id="formularioContacto">
                             <h2>Únete</h2>
 
@@ -205,13 +190,14 @@
 
                         </form>
                     </div>
+
                 </div>
             </div>
         </section>
 
     </main>
 
-    <!-- FOOTER: Redes sociales -->
+    <!-- FOOTER: id="redesSociales" es el ancla del enlace "Redes" del nav -->
     <footer>
         <div id="redesSociales">
             <h3>Redes</h3>
@@ -226,5 +212,4 @@
     </footer>
 
 </body>
-
 </html>
