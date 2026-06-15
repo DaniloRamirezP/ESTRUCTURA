@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería - Brutalesh</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Metal+Mania&family=Oswald:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/estilospropios.css">
+</head>
+
+<body>
+
+    <header>
+        <div id="fondoCabeza">
+            <img src="imagenes/Logo_Original.png" id="Logo">
+        </div>
+    </header>
+
+    <nav id="menuPpal">
+        <a href="index.html#inicio">Inicio</a>
+        <a href="galeria.html" class="nav-activo">Galería</a>
+        <a href="index.html#seccion3">Videos</a>
+        <a href="tienda.html">Tienda</a>
+        <a href="index.html#formularioContacto">Únete</a>
+        <a href="index.html#redesSociales">Redes</a>
+    </nav>
+
+    <main>
+
+        <section id="bannerGaleria">
+            <h1>Galería</h1>
+            <div class="tienda-divider"></div>
+            <p class="tienda-descripcion">Imágenes, logos y flyers oficiales de Brutalesh.</p>
+        </section>
+
+        <section id="seccionFiltrosGaleria">
+            <div class="filtros-contenedor">
+                <button class="filtro-btn activo" onclick="filtrarGaleria('todos', this)">Todas</button>
+                <button class="filtro-btn" onclick="filtrarGaleria('banda', this)">Fotos Banda</button>
+                <button class="filtro-btn" onclick="filtrarGaleria('logo', this)">Logos</button>
+                <button class="filtro-btn" onclick="filtrarGaleria('flyer', this)">Flyers</button>
+            </div>
+        </section>
+
+        <section id="seccionGaleria">
+            <div class="galeria-grid">
+
+                <!-- FOTOS BANDA -->
+
+                <div class="galeria-item" data-categoria="banda"
+                    onclick="abrirModal('imagenes/BRUTALESH2026NEW.jpg', 'Brutalesh 2026 New')">
+                    <img src="imagenes/BRUTALESH2026NEW.jpg" alt="Brutalesh 2026 New">
+                    <div class="galeria-overlay"><span>🔍 Ver</span>
+                        <p>Brutalesh 2026 New</p>
+                    </div>
+                </div>
+
+                <div class="galeria-item" data-categoria="banda"
+                    onclick="abrirModal('imagenes/BRUTALESH2026.jpg', 'Brutalesh 2026')">
+                    <img src="imagenes/BRUTALESH2026.jpg" alt="Brutalesh 2026">
+                    <div class="galeria-overlay"><span>🔍 Ver</span>
+                        <p>Brutalesh 2026</p>
+                    </div>
+                </div>
+
+                <div class="galeria-item" data-categoria="banda"
+                    onclick="abrirModal('imagenes/BRUTALESH2026 (2).jpg', 'Brutalesh 2026 — 2')">
+                    <img src="imagenes/BRUTALESH2026 (2).jpg" alt="Brutalesh 2026 2">
+                    <div class="galeria-overlay"><span>🔍 Ver</span>
+                        <p>Brutalesh 2026 — 2</p>
+                    </div>
+                </div>
+                <div class="galeria-item" data-categoria="banda"
+                    onclick="abrirModal('imagenes/BRUTALESH2026 (3).jpg', 'Brutalesh 2026 — 3')">
+                    <img src="imagenes/BRUTALESH2026 (3).jpg" alt="Brutalesh 2026 3">
+                    <div class="galeria-overlay"><span>🔍 Ver</span>
+                        <p>Brutalesh 2026 — 3</p>
+                    </div>
+                </div>
+                <div class="galeria-item" data-categoria="banda"
+                    onclick="abrirModal('imagenes/BRUTALESH2026 (4).jpg', 'Brutalesh 2026 — 4')">
+                    <img src="imagenes/BRUTALESH2026 (4).jpg" alt="Brutalesh 2026 4">
+                    <div class="galeria-overlay"><span>🔍 Ver</span>
+                        <p>Brutalesh 2026 — 4</p>
+                    </div>
+                </div>
+                <div class="galeria-item" data-categoria="banda"
+                    onclick="abrirModal('imagenes/BRUTALESH2026 (5).jpg', 'Brutalesh 2026 — 5')">
+                    <img src="imagenes/BRUTALESH2026 (5).jpg" alt="Brutalesh 2026 5">
+                    <div class="galeria-overlay"><span>🔍 Ver</span>
+                        <p>Brutalesh 2026 — 5</p>
+                    </div>
+                </div>
+                <div class="galeria-item" data-categoria="banda"
+                    onclick="abrirModal('imagenes/BRUTALESH2026 (6).jpg', 'Brutalesh 2026 — 6')">
+                    <img src="imagenes/BRUTALESH2026 (6).jpg" alt="Brutalesh 2026 6">
+                    <div class="galeria-overlay"><span>🔍 Ver</span>
+                        <p>Brutalesh 2026 — 6</p>
+                    </div>
+                </div>
+                <div class="galeria-item" data-categoria="banda"
+                    onclick="abrirModal('imagenes/BRUTALESH2026 (8).jpg', 'Brutalesh 2026 — 8')">
+                    <img src="imagenes/BRUTALESH2026 (8).jpg" alt="Brutalesh 2026 8">
+                    <div class="galeria-overlay"><span>🔍 Ver</span>
+                        <p>Brutalesh 2026 — 8</p>
+                    </div>
+                </div>
+                <div class="galeria-item" data-categoria="banda"
+                    onclick="abrirModal('imagenes/BRUTALESH2026 (10).jpg', 'Brutalesh 2026 — 10')">
+                    <img src="imagenes/BRUTALESH2026 (10).jpg" alt="Brutalesh 2026 10">
+                    <div class="galeria-overlay"><span>🔍 Ver</span>
+                        <p>Brutalesh 2026 — 10</p>
+                    </div>
+                </div>
+
+                <!-- LOGOS -->
+                <div class="galeria-item" data-categoria="logo"
+                    onclick="abrirModal('imagenes/Logo_Original.png', 'Logo Original')">
+                    <img src="imagenes/Logo_Original.png" alt="Logo Original">
+                    <div class="galeria-overlay"><span>🔍 Ver</span>
+                        <p>Logo Original</p>
+                    </div>
+                </div>
+                <div class="galeria-item" data-categoria="logo"
+                    onclick="abrirModal('imagenes/LogoMutilated.jpg', 'Logo Mutilated')">
+                    <img src="imagenes/LogoMutilated.jpg" alt="Logo Mutilated">
+                    <div class="galeria-overlay"><span>🔍 Ver</span>
+                        <p>Logo Mutilated</p>
+                    </div>
+                </div>
+                <div class="galeria-item" data-categoria="logo"
+                    onclick="abrirModal('imagenes/LogoOrigAlter.jpg', 'Logo Original Alternativo')">
+                    <img src="imagenes/LogoOrigAlter.jpg" alt="Logo Original Alternativo">
+                    <div class="galeria-overlay"><span>🔍 Ver</span>
+                        <p>Logo Original Alternativo</p>
+                    </div>
+                </div>
+                <div class="galeria-item" data-categoria="logo"
+                    onclick="abrirModal('imagenes/Advisory.jpg', 'Advisory')">
+                    <img src="imagenes/Advisory.jpg" alt="Advisory">
+                    <div class="galeria-overlay"><span>🔍 Ver</span>
+                        <p>Advisory</p>
+                    </div>
+                </div>
+
+                <!-- FLYERS / CONCIERTOS -->
+                <div class="galeria-item" data-categoria="flyer"
+                    onclick="abrirModal('imagenes/concierto2024.jpg', 'Concierto 2024')">
+                    <img src="imagenes/concierto2024.jpg" alt="Concierto 2024">
+                    <div class="galeria-overlay"><span>🔍 Ver</span>
+                        <p>Concierto 2024</p>
+                    </div>
+                </div>
+                <div class="galeria-item" data-categoria="flyer"
+                    onclick="abrirModal('imagenes/concierto2025.jpg', 'Concierto 2025')">
+                    <img src="imagenes/concierto2025.jpg" alt="Concierto 2025">
+                    <div class="galeria-overlay"><span>🔍 Ver</span>
+                        <p>Concierto 2025</p>
+                    </div>
+                </div>
+                <div class="galeria-item" data-categoria="flyer"
+                    onclick="abrirModal('imagenes/concierto2025-2.jpg', 'Concierto 2025 — 2')">
+                    <img src="imagenes/concierto2025-2.jpg" alt="Concierto 2025 2">
+                    <div class="galeria-overlay"><span>🔍 Ver</span>
+                        <p>Concierto 2025 — 2</p>
+                    </div>
+                </div>
+                <div class="galeria-item" data-categoria="flyer"
+                    onclick="abrirModal('imagenes/concierto2026.jpg', 'Concierto 2026')">
+                    <img src="imagenes/concierto2026.jpg" alt="Concierto 2026">
+                    <div class="galeria-overlay"><span>🔍 Ver</span>
+                        <p>Concierto 2026</p>
+                    </div>
+                    <!--        </div>
+                <div class="galeria-item" data-categoria="flyer" onclick="abrirModal('imagenes/Caratula_Original.jpg', 'Carátula Demo')">
+                    <img src="imagenes/Caratula_Original.jpg" alt="Carátula Demo">
+                    <div class="galeria-overlay"><span>🔍 Ver</span><p>Carátula Demo</p></div>
+                </div>
+                <div class="galeria-item" data-categoria="flyer" onclick="abrirModal('imagenes/DemoArtesanalFront.jpg', 'Demo Artesanal — Frente')">
+                    <img src="imagenes/DemoArtesanalFront.jpg" alt="Demo Artesanal Frente">
+                    <div class="galeria-overlay"><span>🔍 Ver</span><p>Demo Artesanal — Frente</p></div>
+                </div>
+                <div class="galeria-item" data-categoria="flyer" onclick="abrirModal('imagenes/DemoArtesanalBack.jpg', 'Demo Artesanal — Reverso')">
+                    <img src="imagenes/DemoArtesanalBack.jpg" alt="Demo Artesanal Reverso">
+                    <div class="galeria-overlay"><span>🔍 Ver</span><p>Demo Artesanal — Reverso</p></div>
+                </div>  -->
+
+                </div>
+        </section>
+
+        <!-- AUDIO -->
+        <section id="seccionAudio">
+            <h2>Música</h2>
+            <div class="audio-grid">
+                <div class="audio-bloque">
+                    <img src="imagenes/LogoOrigAlter.jpg" alt="Carátula God's Final Thought" class="audio-caratula">
+                    <div class="audio-info">
+                        <h3 class="audio-titulo">God's Final Thought</h3>
+                        <p class="audio-album">Una prueba de la brutalidad de nuestro 1er FL por salir¡</p>
+                        <audio controls src="audios/Brutalesh_-_God_s_Final_Thought.mp3"></audio>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <div id="modalProducto" class="modal-overlay" onclick="cerrarModal()">
+        <div class="modal-contenido" onclick="event.stopPropagation()">
+            <button class="modal-cerrar" onclick="cerrarModal()">✕</button>
+            <img id="modalImg" src="" alt="">
+            <p id="modalNombre" class="modal-nombre"></p>
+        </div>
+    </div>
+
+    <footer>
+        <div id="redesSociales">
+            <h3>Redes</h3>
+            <div class="redes-links">
+                <a href="https://www.facebook.com/brutalesh.col?locale=es_LA" target="_blank"
+                    rel="noopener">Facebook</a>
+                <a href="https://www.instagram.com/brutaleshcol/" target="_blank" rel="noopener">Instagram</a>
+                <a href="https://www.youtube.com/@BRUTALESH" target="_blank" rel="noopener">YouTube</a>
+                <a href="https://open.spotify.com/search/brutalesh" target="_blank" rel="noopener">Spotify</a>
+            </div>
+        </div>
+        <p class="copyright">Todos los derechos reservados. Creador: Danilo Ramírez Peláez 2026.</p>
+    </footer>
+
+    <script>
+
+        function abrirModal(src, nombre) {
+            document.getElementById('modalImg').src = src;
+            document.getElementById('modalNombre').textContent = nombre;
+            document.getElementById('modalProducto').classList.add('modal-visible');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function cerrarModal() {
+            document.getElementById('modalProducto').classList.remove('modal-visible');
+            document.body.style.overflow = '';
+        }
+
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape') cerrarModal();
+        });
+
+        function filtrarGaleria(categoria, botonClickeado) {
+            document.querySelectorAll('.filtro-btn').forEach(function (btn) {
+                btn.classList.remove('activo');
+            });
+            botonClickeado.classList.add('activo');
+
+            document.querySelectorAll('.galeria-item').forEach(function (item) {
+                if (categoria === 'todos' || item.dataset.categoria === categoria) {
+                    item.style.display = 'block';
+                    setTimeout(function () {
+                        item.style.opacity = '1';
+                        item.style.transform = 'scale(1)';
+                    }, 10);
+                } else {
+                    item.style.opacity = '0';
+                    item.style.transform = 'scale(0.95)';
+                    setTimeout(function () { item.style.display = 'none'; }, 250);
+                }
+            });
+        }
+
+        /* ===== INICIO: activa filtro si viene de index.html con ?categoria= ===== */
+        var params = new URLSearchParams(window.location.search);
+        var categoriaInicial = params.get('categoria');
+        if (categoriaInicial) {
+            var btnFiltro = document.querySelector(
+                '.filtro-btn[onclick*="' + categoriaInicial + '"]'
+            );
+            if (btnFiltro) filtrarGaleria(categoriaInicial, btnFiltro);
+        }
+
+    </script>
+
+</body>
+
+</html>
